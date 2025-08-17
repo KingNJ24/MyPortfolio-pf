@@ -37,7 +37,7 @@ const projects = [
     title: "ODOP (One District One Product)",
     description:
       "Platform enabling 50+ Kashmiri vendors to sell district-specific products with blockchain-based tracking for authenticity.",
-    image: "/local-marketplace-platform.png",
+    image: "/local-marketplace.png",
     tech: ["React", "Node.js", "Blockchain", "MongoDB", "Express"],
     github: "https://github.com/KingNJ24",
     live: "#",
@@ -60,14 +60,14 @@ export function Projects() {
             {projects.map((project, index) => (
               <Card
                 key={project.title}
-                className={`bg-card border-border hover:shadow-lg transition-all duration-300 animate-fade-in-up`}
+                className={`project-card hover:shadow-lg transition-all duration-300 animate-fade-in-up`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="aspect-video overflow-hidden rounded-t-lg">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover image-hover-effect"
                   />
                 </div>
                 <CardHeader>
